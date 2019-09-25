@@ -1,6 +1,6 @@
 # Version 1: Initial commit
 
-# Version 2: Section 18, chapter 208
+# Version 2: Section 18, Chapter 208
    $() selects whatever is in the () and returns them in an array, even if the 
       array only has one item
       
@@ -23,3 +23,13 @@
       If I choose them in css or jQueary I get an array of 6 items. Normally I would
       need to loop through all 6 to change them. In jQuery I could do:
       $(".square).css("background","white") and it does that for me.
+
+# Version 3: Section 18, Chapter 209, Common Methods in jQuery
+   val()
+   text()         - similar to .css textContent, text is not treated like html
+   attr()
+   html()         - the text is actually treated like html
+   addClass()
+   removeClass()
+   toggleClass()
+
