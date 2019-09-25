@@ -1,4 +1,8 @@
 # Version 1: Initial commit
+   You can use regular .css selectors inside the $(), and this is actually faster
+   than using a jQuery selector since it is built-in .css
+   $("li:first-of-type")   - built-in .css
+   $("li:first")           - jQuery
 
 # Version 2: Section 18, Chapter 208
    $() selects whatever is in the () and returns them in an array, even if the 
@@ -24,11 +28,23 @@
       need to loop through all 6 to change them. In jQuery I could do:
       $(".square).css("background","white") and it does that for me.
 
-# Version 3: Section 18, Chapter 209, Common Methods in jQuery
+# Version 3: Section 18, Chapter 210, Common Methods in jQuery
+   Selector exercise
+
+# Version 3: Section 18, Chapter 210, Common Methods in jQuery
    val()
    text()         - similar to .css textContent, text is not treated like html
    attr()
    html()         - the text is actually treated like html
+   addClass()
+   removeClass()
+   toggleClass()
+
+# Version 4: Section 18, Chapter 211, Common Methods in jQuery
+   val()          - similar to .css value
+   text()         - similar to .css textContent, text is not treated like html
+   attr()         - 
+   html()         - similar to .css innerHTML, the text is actually treated like html
    addClass()
    removeClass()
    toggleClass()
