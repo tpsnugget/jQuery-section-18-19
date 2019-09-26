@@ -7,13 +7,13 @@
 
 // =============================================================================
 // # Version 3: Section 18, Chapter 210, text() and html()
-console.log($("h1").text())
-var a = $("ul").text()
-console.log(a)
+// console.log($("h1").text())
+// var a = $("ul").text()
+// console.log(a)
 
 // To change all 3 li's at once without needing a loop
 // $("ul").html("<li>Boom!!!</li>", "<li>Boom!!</li>", "<li>Boom!</li>")
-$("li").html("<a href=https://google.com>Boom!!</a>")
+// $("li").html("<a href=https://google.com>Boom!!</a>")
 
 // =============================================================================
 // Version 4, Section 18, Chapter 211, attr() and val()
@@ -21,21 +21,32 @@ $("li").html("<a href=https://google.com>Boom!!</a>")
 $("img").css("width", "200px")
 $("img:first-of-type").attr("src", "https://c3.staticflickr.com/3/2418/2243463214_f32ab004af_b.jpg")
 
-// To select the last img
+// // To select the last img
 $("img").last().attr("src", "https://c3.staticflickr.com/3/2418/2243463214_f32ab004af_b.jpg")
 
-// Get the input, change the type of the input from text to number, change the
-// placeholder to blank
-// $("input").attr({
-//    type: "number",
-//    placeholder: ""
-// })
+// // Get the input, change the type of the input from text to number, change the
+// // placeholder to blank
+// // $("input").attr({
+// //    type: "number",
+// //    placeholder: ""
+// // })
 
-// Set the value of the text input
-$("input").val("Mike")
+// // Set the value of the text input
+// $("input").val("Mike")
 
-// Get the value from the text input
-console.log($("input").val())
+// // Get the value from the text input
+// console.log($("input").val())
 
-// Added a dropdown box, set the initial value to ""
-$("input").val("")
+// // Added a dropdown box, set the initial value to ""
+// $("input").val("")
+
+// =============================================================================
+// Version 4, Section 18, Chapter 211, attr() and val()
+// Working with attr() and img's
+$("li:first-of-type").addClass("correct")
+$("li:nth-of-type(2)").addClass("wrong")
+
+// Two ways of selecting the last li
+$("li:last-of-type").addClass("done")
+$("li").last().toggleClass("done")
+$("li").last().toggleClass("done")
