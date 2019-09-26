@@ -45,7 +45,7 @@
    text()         - similar to .css textContent, text is not treated like html
    attr()         - 
    html()         - similar to .css innerHTML, the text is actually treated like html
-   addClass()
-   removeClass()
-   toggleClass()
+   addClass()     -
+   removeClass()  -
+   toggleClass()  -
 
