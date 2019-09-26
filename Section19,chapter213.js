@@ -15,3 +15,15 @@ $("button").click(function() {
 $("button").click(function() {
    console.log("You clicked the button " + $(this).text())
 })
+
+// Chapter 214, .keypress()
+// e contains all the information about the jQuery .keypress() event
+$("input").keypress(function(e) {
+   // console.log("You pressed the " + $(this).val() + " char")
+   // console.log("You pressed the " + e.which + " char")
+
+   // If the user hits the enter key
+   if (e.which === 13) {
+      console.log("You hit the enter key after typing " + $(this).val())
+   }
+})
